@@ -8,7 +8,7 @@ public class ClassCollatz {
 
   }
   ClassCollatz() {
-    out = new PrintStream(System.out); in = new Scanner(System.in);
+    out = new PrintStream(System.out); in = new Scanner(System..in);
   }
 
   void start() {
