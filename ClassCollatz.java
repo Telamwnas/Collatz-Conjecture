@@ -12,11 +12,15 @@ public class ClassCollatz {
   }
 
   void start() {
-    out.printf("=>");
+    out.println("----------------");
+    out.print("|Give the value| ");
+    System.out.println("\n----------------");
+    out.printf("==>");
 
     long metav1 = in .nextInt();
 
     out.printf("%d", metav1);
+    System.out.println("\n" + "--------");
     while (metav1 != 1) {
 
       Long metav2 = (metav1 % 2);
@@ -26,8 +30,9 @@ public class ClassCollatz {
       } else {
         metav1 = (3 * metav1 + 1);
       }
-      out.printf("\n%d", metav1);
-
+      out.printf("%4d", metav1);
+      System.out.println("\n---------");
     }
   }
+
 }
